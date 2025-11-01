@@ -1,1 +1,115 @@
 /*  your css code here. If applicable */
+/* General Styling and Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light background for the page */
+    display: flex;
+    justify-content: center; /* Center the main content block */
+}
+
+/* Main Container to enforce 1100px width */
+.main-container {
+    width: 1100px;
+    background-color: white; /* White background for the content area */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0; /* No internal padding on the container itself */
+}
+
+h1 {
+    font-size: 24px;
+    padding: 10px 0 5px 10px;
+    margin: 0;
+}
+
+/* Image Container Styling */
+.imageContainer {
+    margin-bottom: 20px;
+    overflow: hidden; /* Ensures image fits within the div */
+}
+
+.top-image {
+    width: 100%; /* Image takes full width of the 1100px container */
+    display: block;
+    height: auto;
+}
+
+/* Table Styling */
+table {
+    width: 100%; /* Table fills the 1100px main container */
+    border-collapse: collapse; /* Removes space between borders */
+}
+
+/* Cell Styling (Applies to all table data cells) */
+td {
+    padding: 0;
+    border: 1px solid #ccc; /* Light border for separation */
+    vertical-align: top;
+}
+
+/* Image Specifics in Table */
+.table-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Text Cell Styling - General */
+.text-cell {
+    padding: 15px; /* Add some padding around text */
+    text-align: center;
+    background-color: #e0eee0; /* Light green/grey background for the middle text column */
+    color: #333;
+}
+
+/* Specific styling for the Unit Plan (Row 1, Middle) */
+.unit-plan {
+    font-size: 16px;
+    font-weight: bold;
+}
+.unit-plan p {
+    margin-top: 0;
+}
+.unit-plan ol {
+    text-align: left;
+    display: inline-block; /* Helps center the list itself */
+    list-style-position: inside;
+    font-weight: normal;
+}
+.unit-plan li {
+    padding: 3px 0;
+}
+
+/* Specific styling for the Objective (Row 2, Middle) */
+.objective-text {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.4;
+    background-color: #f5f5f5; /* Different background color for contrast */
+}
+.objective-text p {
+    margin: 5px 0;
+}
+.objective-text p:first-child {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Image and Text Cells (Row 2, Column 1 and 3) */
+.image-text-cell {
+    text-align: left;
+    padding: 0;
+}
+.image-text-cell p {
+    padding: 10px;
+    margin: 0;
+    font-size: 12px;
+}
+.image-text-cell a {
+    color: green;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+}
